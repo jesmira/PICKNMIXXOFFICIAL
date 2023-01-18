@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.bg_img {
+  background-image: url(career_img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+/*header*/
+.logotitle {
+  color: white;
+  font-size: 30px;
+}
+
+.logotitle span {
+  color: #e91e63;
+}
+
+.logopic {
+  width: 60px;
+  margin-right: 500px;
+}
+
+.menu-bar {
+  background-color: orange;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  position: absolute;
+  top: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  width: 120px;
+  padding: 10px 30px;
+  text-align: center;
+  position: relative;
+  color: white;
+  font-size: 20px;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color: #e91e63;
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: orange;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: black;
+}
+
+/*footer*/
+.footercontainer {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.footerrow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  width: 100%;
+  background-color: orange;
+  padding: 70px 0;
+  bottom: 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 4px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: black;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+}
+
+.footericon {
+  width: 40px;
+}
+
+/*career.html*/
+.vacancies_button {
+  display: inline-block;
+  padding: 15px 10px;
+  font-size: 24px;
+  text-align: center;
+  outline: none;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-left: 620px;
+  margin-bottom: -200px;
+}
+
+.vacancies_button:hover {
+  background-color: e6ad67;
+}
+
+.vacancies_button:active {
+  background-color: e6ad67;
+  transform: translateY(4px);
+}
+
+/*vacancies.html*/
+.img_bg {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background-image: url(img_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 1000px;
+  height: 450px;
+  background: rgb(223, 30, 99, 0.6);
+  font-size: 22px;
+}
+
+tr:hover {
+  background-color: orange;
+}
+
+/*kitchen crew.html*/
+.submit_button {
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  position: absolute;
+}
+
+.submit_button:hover {
+  background-color: #e91e63;
+}
+
+.submit_button:active {
+  background-color: e6ad67;
+  transform: translateY(4px);
+}
+
+.back_button {
+  display: inline-block;
+  padding: 15px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  position: absolute;
+}
+
+.back_button:hover {
+  background-color: #e91e63;
+}
+
+.back_button:active {
+  background-color: e6ad67;
+  transform: translateY(4px);
+}
+
+.items_column {
+  flex: 65%;
+  padding: 30px;
+  height: 250px;
+  width: 570px;
+}
+
+.item_column {
+  flex: 70%;
+  padding: 30px;
+  height: 300px;
+  width: 550px;
+}
+
+.itemss_column {
+  flex: 70%;
+  padding: 30px;
+  height: 290px;
+  width: 550px;
+}
+
+.itemed_column {
+  flex: 70%;
+  padding: 30px;
+  height: 280px;
+  width: 530px;
+}
+
+.job_row {
+  display: flex;
+}
+
+select {
+  border: 5px solid orange;
+  height: 40px;
+  width: 200px;
+  padding: 0 15px;
+  margin-right: 20px;
+}
+
+/*borang.html*/
+.resume_button {
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  position: absolute;
+}
+
+.resume_button:hover {
+  background-color: #e91e63;
+}
+
+.resume_button:active {
+  background-color: e6ad67;
+  transform: translateY(4px);
+}
+
+/* Anchor */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #e91e63;
+  color: white;
+}
+
+  
+
+#clock {
+font-size: 20px;
+text-align:left;
+padding:0;
+color:black;
+}
