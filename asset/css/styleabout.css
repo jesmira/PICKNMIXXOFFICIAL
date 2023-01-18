@@ -1,0 +1,641 @@
+.phrase {
+  font-size: 18px;
+}
+
+/*header*/
+.logotitle {
+  color: white;
+  font-size: 30px;
+}
+
+.logotitle span {
+  color: #e91e63;
+}
+
+.logopic {
+  width: 60px;
+  margin-right: 500px;
+}
+
+.menu-bar {
+  background-color: orange;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  position: absolute;
+  top: 0;
+  margin: auto;
+  left: 0:
+  right: 0;
+  z-index: 1;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  width: 120px;
+  padding: 10px 30px;
+  text-align: center; 
+  position: relative;
+  color: white;
+  font-size: 20px;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color: #e91e63;
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: orange;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: black;
+}
+
+/* ABOUT*/
+
+/* LINE*/
+hr.new4 {
+  border: 2px solid rgb(243, 218, 150);
+}
+
+/* PADDING*/
+div.about {
+  width: 100%;
+  padding: 25px;
+  padding-left: 7%;
+  padding-right: 7%;
+  background-color: orange;
+}
+
+.slogan {
+  font-size: 200%;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  border: 2px solid white;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: orange;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* SIDE BY SIDE IMAGE*/
+.column {
+  float: left;
+  width: 33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HERO IMAGE*/
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("file:///C:/Users/user/Desktop/PICKNMIX/asset/image/gradiant1.png");
+  height: 25%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: black;
+  color: white;
+}
+
+/* GREY BUTTON */
+.button {
+  background-color: #dfe0ca; /* Green */
+  border: none;
+  color: rgb(10, 7, 7);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* HALAL */
+
+.img_pine {
+  float: right;
+}
+
+div.halaltitle {
+  font-size: 200%;
+  text-align: justify;
+  left: 20%;
+  padding-left: 80px;
+  padding-right: 200px;
+}
+
+.aboutphrase {
+  font-size: 200%;
+  text-align: justify;
+}
+
+/* HALAL CERTIFICATES*/
+
+/* HISTORY*/
+
+/* footer*/
+
+.footercontainer {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.footerrow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  width: 100%;
+  background-color: orange;
+  padding: 70px 0;
+  bottom: 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 4px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: black;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+}
+
+.footericon {
+  width: 40px;
+}
+
+/* Anchor */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #e91e63;
+  color: white;
+}
+
+#clock {
+font-size: 20px;
+text-align:left;
+padding:0;
+color: black;
+}
+
+
+/*history*/
+
+.bottom-left-one {
+  position: absolute;
+  bottom: 20%;
+  left: 7%;
+  padding-right: 58%;
+  text-align: justify;
+  font-size: 150%;
+  color:black;
+}
+
+.top-left-one {
+  position: absolute;
+  top: 20%;
+  left: 7%;
+  font-size: 250%;
+  color:black;
+}
+
+.top-right-one {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+color:black;
+}
+
+.bottom-right-one {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+color:black;
+}
+
+.centered-one {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-left-two {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+color:black;
+}
+
+.top-left-two {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+color:black;
+}
+
+.top-right-two {
+  position: absolute;
+  top: 104%;
+  right: 41%;
+  font-size: 250%;
+color:black;
+}
+
+.bottom-right-two {
+  position: absolute;
+  bottom: -47%;
+  right: 10%;
+  padding-left: 39%;
+  text-align: justify;
+  font-size: 150%;
+color:black;
+}
+
+.centered-two {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-left-three {
+  position: absolute;
+  bottom: -135%;
+  left: 9%;
+  padding-right: 50%;
+  text-align: justify;
+  font-size: 150%;
+color:black;
+}
+
+.top-left-three {
+  position: absolute;
+  top: 190%;
+  left: 9%;
+  padding-right: 50%;
+  font-size: 250%;
+color:black;
+}
+
+.top-right-three {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+color:black;
+}
+
+.bottom-right-three {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+color:black;
+}
+
+.centered-three {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-left-four {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+color:black;
+}
+
+.top-left-four {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+color:black;
+}
+
+.top-right-four {
+  position: absolute;
+  top: 280%;
+  right: 24%;
+  font-size: 250%;
+color:black;
+}
+
+.bottom-right-four {
+  position: absolute;
+  bottom: -226%;
+  right: 9%;
+  padding-left: 50%;
+  text-align: justify;
+  font-size: 150%;
+color:black;
+}
+
+.centered-four {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*stylechart*/
+
+.flip-card1 {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(206, 135, 135, 0.699);
+}
+
+.flip-card1:hover .flip-card-inner1 {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front1,
+.flip-card-back1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front1 {
+  background-color: rgb(219, 123, 123);
+  color: rgb(230, 206, 206);
+}
+
+.flip-card-back1 {
+  background-color: #e91e63;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* SIDE BY SIDE IMAGE*/
+.column {
+  float: left;
+  width: 33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*stylehalal*/
+div.halalpolicy {
+  float: left;
+  width: 42.1%;
+  height: 45%;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: rgba(180, 87, 75, 0.918);
+  margin-left: 7.9%;
+  text-align: justify;
+}
+
+div.halalcompliance {
+  float: right;
+  width: 42.1%;
+  height: 45%;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: rgb(219, 155, 58);
+  margin-right: 7.9%;
+  text-align: justify;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 20px;
+  width: 84.6%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 30px;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
